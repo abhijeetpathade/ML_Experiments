@@ -35,3 +35,51 @@ Also it Contains Mini Assisgnment
 </p>
 
 Happy Learning! 
+
+
+# 3. Simple Linear Regression
+
+This project implements **Simple Linear Regression** using Python and Machine Learning.
+
+### Technologies
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Flask
+
+### How It Works
+
+The model learns the relationship between one input feature and the output value. After training, it can predict the output for new input data.
+
+### Project Overview
+
+This project includes model training, prediction, and a simple Flask web application to use the trained model.
+
+###Output :-
+
+
+
+# 4. Multiple Linear Regression
+
+This project implements **Multiple Linear Regression** using Python and Machine Learning.
+
+### Technologies
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Flask
+
+### How It Works
+
+The model learns the relationship between multiple input features and the output value. After training, it can predict the output for new input data.
+
+### Project Overview
+
+This project includes data processing, model training, prediction, and a simple Flask web application to use the trained model.
+
+###Output :-
+
