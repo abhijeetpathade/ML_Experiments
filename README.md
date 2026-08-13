@@ -57,8 +57,10 @@ The model learns the relationship between one input feature and the output value
 
 This project includes model training, prediction, and a simple Flask web application to use the trained model.
 
-###Output :-
+### Output :-
+![Simple Linear Regression Output](Prediction_Output(SLR).png)
 
+Happy Learning! 
 
 
 # 4. Multiple Linear Regression
@@ -81,5 +83,7 @@ The model learns the relationship between multiple input features and the output
 
 This project includes data processing, model training, prediction, and a simple Flask web application to use the trained model.
 
-###Output :-
+### Output :-
+![Multiple Linear Regression Output](Prediction_Output(MLR).png)
 
+Happy Learning! 
