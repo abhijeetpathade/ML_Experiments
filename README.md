@@ -24,7 +24,7 @@ Simply open any notebook and click **Open in Colab** to run it online.
 Happy Learning! 
 
 
-# 2. Dataset
+# Dataset
 
 This folder contains essential concepts of data preprocessing, exploratory data analysis (EDA), feature engineering, visualization, handling missing values, encoding, feature scaling, and dataset cleaning using Python.
 
@@ -37,7 +37,7 @@ Also it Contains Mini Assisgnment
 Happy Learning! 
 
 
-# 3. Simple Linear Regression
+# 2. Simple Linear Regression
 
 This project implements **Simple Linear Regression** using Python and Machine Learning.
 
@@ -63,7 +63,7 @@ This project includes model training, prediction, and a simple Flask web applica
 Happy Learning! 
 
 
-# 4. Multiple Linear Regression
+# 3. Multiple Linear Regression
 
 This project implements **Multiple Linear Regression** using Python and Machine Learning.
 
