@@ -87,3 +87,31 @@ This project includes data processing, model training, prediction, and a simple 
 ![Multiple Linear Regression Output](Prediction_Output(MLR).png)
 
 Happy Learning! 
+
+
+# 4. Logistic Regression for Binary Classification
+
+This project implements **Logistic Regression** for solving a binary classification problem using Python and Machine Learning.
+
+### Technologies
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Flask
+
+### How It Works
+
+The model learns from the given dataset and predicts one of two possible classes. Logistic Regression is used to calculate the probability of an input belonging to a particular class.
+
+### Project Overview
+
+This project includes data preprocessing, model training, prediction, and a simple Flask web application for making predictions.
+
+### Output :-
+
+![Logistic Regression Output](Predicted_Output_LR.png)
+
+Happy Learning!
+
