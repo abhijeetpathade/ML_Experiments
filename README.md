@@ -151,4 +151,6 @@ The trained model can be used to predict the class of new input data based on th
 
 ### Output :-
 
-![Multiclass Logistic Regression](output.png)
+![Multiclass Logistic Regression](Predicted_Output_Multiclass_LR.png)
+
+Happy Learning!
