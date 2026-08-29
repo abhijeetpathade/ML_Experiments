@@ -115,3 +115,40 @@ This project includes data preprocessing, model training, prediction, and a simp
 
 Happy Learning!
 
+
+
+# 5. Multiclass Classification using Logistic Regression
+
+### About
+This Project demonstrates **Multiclass Classification using Logistic Regression** to classify data into multiple categories. It uses input features to predict the appropriate class for a given data point.
+
+### Objective
+To implement Logistic Regression for multiclass classification and predict the class of new data.
+
+### Dataset
+A dataset with multiple input features and **three or more target classes** is used for classification. The dataset is explored and divided into features and target values before training the model.
+
+### Model
+**Algorithm:** Logistic Regression  
+**Type:** Multiclass Classification
+
+The model is trained using the training data and then used to predict the classes of unseen data.
+
+### Evaluation
+The performance of the trained model is evaluated using:
+- Accuracy Score
+- Classification Report
+
+### Prediction
+The trained model can be used to predict the class of new input data based on the given features.
+
+### Libraries
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+### Output :-
+
+![Multiclass Logistic Regression](output.png)
