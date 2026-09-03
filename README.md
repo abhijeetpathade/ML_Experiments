@@ -154,3 +154,35 @@ The trained model can be used to predict the class of new input data based on th
 ![Multiclass Logistic Regression](Predicted_Output_Multiclass_LR.png)
 
 Happy Learning!
+
+
+
+# 6.Decision Tree Classifier
+
+## About
+This experiment demonstrates **Decision Tree Classification** to classify data into different categories using a tree-based model.
+
+## Objective
+To build and train a Decision Tree Classifier and use it to predict the class of new data.
+
+## Model
+**Algorithm:** Decision Tree Classifier  
+**Type:** Classification
+
+## Evaluation
+- Accuracy Score
+- Classification Report
+- Confusion Matrix
+
+## Output
+The output of the Decision Tree Classifier is shown below:
+
+
+## Libraries
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+![Decision Tree Output](output.png)
