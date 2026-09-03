@@ -185,4 +185,6 @@ The output of the Decision Tree Classifier is shown below:
 - Matplotlib
 - Scikit-learn
 
-![Decision Tree Output](output.png)
+![Decision Tree Output](Decsion_Tree_Output.png)
+
+Happy Learning!
