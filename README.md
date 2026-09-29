@@ -189,7 +189,7 @@ The output of the Decision Tree Classifier is shown below:
 
 Happy Learning!
 
-# 7.KNN Classification
+# 7.KNN Classifier
 
 ## About
 This experiment demonstrates the implementation of the K-Nearest Neighbors (KNN) classification algorithm on two different datasets: Diabetes and Breast Cancer.
