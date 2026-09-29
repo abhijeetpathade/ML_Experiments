@@ -188,3 +188,30 @@ The output of the Decision Tree Classifier is shown below:
 ![Decision Tree Output](Decsion_Tree_Output.png)
 
 Happy Learning!
+
+# 7.KNN Classification Experiment
+
+## About
+This experiment demonstrates the implementation of the K-Nearest Neighbors (KNN) classification algorithm on two different datasets: Diabetes and Breast Cancer.
+
+KNN Workflow
+
+- Load and Inspect the Dataset
+- Data Preprocessing
+- Explore the Data
+- Split and Scale the Data
+- Tune the K Value
+- Train and Evaluate the Model
+- Make Predictions
+
+## 1. Diabetes Dataset
+The KNN classifier predicts whether a patient has diabetes or not based on diagnostic and medical measurements.
+
+### Output :-
+![Diabetes Dataset Output](Decsion_Tree_Outpu.png)
+
+## 2. Breast Cancer Dataset
+The KNN classifier is used to predict whether a breast tumor is malignant or benign based on diagnostic measurements.
+
+### Output :-
+![Breast Cancer Dataset Output]()
