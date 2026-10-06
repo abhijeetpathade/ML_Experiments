@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Message Detective</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #222;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header {
+            background: #1f3c88;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .header p {
+            font-size: 16px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 18px;
+            color: #1f3c88;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        select {
+            background: white;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .button {
+            width: 100%;
+            padding: 14px;
+            background: #1f3c88;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #162d68;
+        }
+
+        .result {
+            text-align: center;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .important {
+            background: #e8f5e9;
+            border: 2px solid #43a047;
+        }
+
+        .promotional {
+            background: #fff3e0;
+            border: 2px solid #fb8c00;
+        }
+
+        .result h2 {
+            margin-bottom: 10px;
+        }
+
+        .prediction {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .message-box {
+            background: #f7f7f7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .probability {
+            margin-top: 15px;
+        }
+
+        .probability-row {
+            margin-bottom: 12px;
+        }
+
+        .probability-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .bar-container {
+            width: 100%;
+            height: 20px;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar {
+            height: 100%;
+            background: #1f3c88;
+        }
+
+        .messages-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .message-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+
+        .message-number {
+            font-weight: bold;
+            color: #1f3c88;
+            margin-bottom: 6px;
+        }
+
+        .message-category {
+            font-size: 13px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .message-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info {
+            background: #eef3ff;
+            border-left: 5px solid #1f3c88;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .messages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>Campus Message Detective</h1>
+
+        <p>
+            Naive Bayes Classifier for College Messages
+        </p>
+
+    </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="card">
+
+        <div class="info">
+
+            <strong>How it works:</strong>
+
+            Select a college message or enter your own message.
+            The trained Naive Bayes model will classify it as
+            <strong>Important</strong> or
+            <strong>Promotional</strong>.
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <form method="POST">
+
+            <label for="selected_message">
+                Select a College Message
+            </label>
+
+            <select
+                name="selected_message"
+                id="selected_message"
+            >
+
+                <option value="">
+                    -- Select a message --
+                </option>
+
+                {% for item in messages %}
+
+                <option value="{{ loop.index0 }}">
+
+                    {{ loop.index }}.
+                    {{ item.category }}
+
+                </option>
+
+                {% endfor %}
+
+            </select>
+
+
+            <label for="custom_message">
+                Or Enter Your Own Message
+            </label>
+
+            <textarea
+                name="custom_message"
+                id="custom_message"
+                placeholder="Example: The examination form submission deadline is tomorrow."
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="button"
+            >
+
+                Classify Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- RESULT -->
+
+    {% if prediction %}
+
+    <div class="card">
+
+        <div class="result
+            {% if prediction == 'Important' %}
+                important
+            {% else %}
+                promotional
+            {% endif %}
+        ">
+
+            <h2>Classification Result</h2>
+
+            <div class="prediction">
+
+                {{ prediction }}
+
+            </div>
+
+            <p>
+                The Naive Bayes model classified this message as
+                <strong>{{ prediction }}</strong>.
+            </p>
+
+
+            <div class="message-box">
+
+                <strong>Message:</strong>
+
+                <p style="margin-top: 8px;">
+                    {{ message }}
+                </p>
+
+                <br>
+
+                <strong>Selected Category:</strong>
+
+                <p style="margin-top: 5px;">
+                    {{ selected_category }}
+                </p>
+
+            </div>
+
+
+            <!-- PROBABILITIES -->
+
+            {% if probabilities %}
+
+            <div class="probability">
+
+                <h3 style="margin-bottom: 15px;">
+                    Prediction Probability
+                </h3>
+
+
+                {% for item in probabilities %}
+
+                <div class="probability-row">
+
+                    <div class="probability-label">
+
+                        <span>
+                            {{ item.class }}
+                        </span>
+
+                        <span>
+                            {{ item.probability }}%
+                        </span>
+
+                    </div>
+
+
+                    <div class="bar-container">
+
+                        <div
+                            class="bar"
+                            data-width="{{ item.probability }}">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+
+    <!-- 12 NEW MESSAGES -->
+
+    <div class="card">
+
+        <h2>
+            Added College-Context Messages
+        </h2>
+
+        <p style="margin-bottom: 20px; color: #555;">
+
+            These are the new messages added for testing
+            the trained Naive Bayes classifier.
+
+        </p>
+
+
+        <div class="messages-grid">
+
+            {% for item in messages %}
+
+            <div class="message-item">
+
+                <div class="message-number">
+
+                    Message {{ loop.index }}
+
+                </div>
+
+                <div class="message-category">
+
+                    {{ item.category }}
+
+                </div>
+
+                <div class="message-text">
+
+                    {{ item.message }}
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div style="
+        text-align: center;
+        padding: 20px;
+        color: #666;
+    ">
+
+        <p>
+            Campus Message Detective |
+            Multinomial Naive Bayes
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+    document.querySelectorAll(".bar").forEach(function(bar) {
+        const width = bar.getAttribute("data-width");
+        bar.style.width = width + "%";
+    });
+</script>
+
+</body>
+
+</html>
