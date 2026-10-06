@@ -257,6 +257,6 @@ python app2.py
 ```
 
 ## Output :-
-![Campus Message Classification Interface](output1.png)
+![Naive Bayes Classifier](Predicted_Ouput_Naive_Bayes_Classifier.png)
 
 Happy Learning!
