@@ -214,8 +214,49 @@ The KNN classifier is used to predict whether a breast tumor is malignant or ben
 ## 2. Diabetes Dataset
 The KNN classifier predicts whether a patient has diabetes or not based on diagnostic and medical measurements.
 
+
+
 ### Output :-
 ![Diabetes Dataset Output](KNN_Classifier_dibaties_output.png)
 
+
+Happy Learning!
+
+
+
+# 8.Naive Bayes Classifier
+
+## About
+Naive Bayes is a supervised machine learning algorithm based on Bayes' theorem. It is commonly used for text classification because it is simple, fast, and effective for handling text data.
+
+
+## Project
+
+Campus Message Detective classifies college messages into three categories:
+
+- 📚 Academic
+- 💼 Placement
+- 🛍️ Promotional
+
+The project uses a dataset of **college messages** and provides a **Flask web interface** for real-time classification.
+
+## Technologies
+
+- Python
+- Pandas
+- Scikit-learn
+- Naive Bayes
+- Flask
+- HTML/CSS
+
+## Run
+
+```bash
+pip install flask pandas scikit-learn joblib
+python app2.py
+```
+
+## Output :-
+![Campus Message Classification Interface](output1.png)
 
 Happy Learning!
