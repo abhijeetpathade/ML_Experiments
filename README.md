@@ -232,7 +232,7 @@ Naive Bayes is a supervised machine learning algorithm based on Bayes' theorem. 
 
 ## Project
 
-Campus Message Detective classifies college messages into three categories:
+The system classifies college messages into three categories:
 
 - 📚 Academic
 - 💼 Placement
@@ -253,7 +253,7 @@ The project uses a dataset of **college messages** and provides a **Flask web in
 
 ```bash
 pip install flask pandas scikit-learn joblib
-python app2.py
+python app.py
 ```
 
 ## Output :-
