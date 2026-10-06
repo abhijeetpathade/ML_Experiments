@@ -234,8 +234,7 @@ Naive Bayes is a supervised machine learning algorithm based on Bayes' theorem. 
 
 The system classifies college messages into three categories:
 
-- 📚 Academic
-- 💼 Placement
+- 📚 Important
 - 🛍️ Promotional
 
 The project uses a dataset of **college messages** and provides a **Flask web interface** for real-time classification.
