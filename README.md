@@ -232,12 +232,12 @@ Naive Bayes is a supervised machine learning algorithm based on Bayes' theorem. 
 
 ## Project
 
-The system classifies college messages into three categories:
+Campus Message Detective is a machine learning project that automatically classifies college messages based on their content.
+
+The system classifies messages into two categories:
 
 - 📚 Important
 - 🛍️ Promotional
-
-The project uses a dataset of **college messages** and provides a **Flask web interface** for real-time classification.
 
 ## Technologies
 
