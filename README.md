@@ -259,3 +259,100 @@ python app.py
 ![Naive Bayes Classifier](Predicted_Ouput_Naive_Bayes_Classifier.png)
 
 Happy Learning!
+
+
+
+# 9.Linear SVM
+
+## About :-
+
+Linear Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification. It finds the best separating hyperplane between different classes by maximizing the margin between them.
+
+## Project
+
+### Counterfeit Banknote Detection
+
+Develop a Linear Support Vector Machine (SVM) classification model to classify banknotes as genuine or counterfeit and deploy it as a Flask web application using HTML.
+
+## Technologies Used
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Flask and HTML/CSS
+- Google Colab
+
+## Dataset
+
+Banknote Authentication dataset containing four features: variance, skewness, curtosis, and entropy.
+
+## Implementation
+1. Load and explore the dataset.
+2. Preprocess the data and split it into training and testing sets.
+3. Train a Linear SVM model.
+4. Evaluate the model using accuracy and a confusion matrix.
+5. Save the trained model and integrate it with Flask.
+6. Predict banknote authenticity through a web interface.
+
+### Run the Application
+
+```bash
+pip install flask pandas scikit-learn joblib
+python app.py
+```
+Open ```http://127.0.0.1:5000``` in your browser.
+
+## Output :-
+
+![Predicted Output Linear SVM](Predicted_Output_Linear_SVM.png)
+
+Happy Learning!
+
+
+
+
+
+# 10.Non-Linear SVM
+
+## About :- 
+
+Non-Linear Support Vector Machine (SVM) is a supervised machine learning algorithm that can classify data using non-linear decision boundaries. It uses kernel functions, such as the Radial Basis Function (RBF) kernel, to identify more complex patterns in data.
+
+## Project
+
+### Counterfeit Banknote Detection Using RBF Kernel
+
+Develop a Non-Linear Support Vector Machine (SVM) classification model using the Radial Basis Function (RBF) kernel to classify banknotes as genuine or counterfeit and deploy it as a Flask web application using HTML.
+
+## Technologies Used
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Flask and HTML/CSS
+- Google Colab
+
+## Dataset
+
+Banknote Authentication dataset containing four features: variance, skewness, curtosis, and entropy.
+
+## Implementation
+1. Load and explore the dataset.
+2. Preprocess the data and split it into training and testing sets.
+3. Train a Non-Linear SVM model using the RBF kernel.
+4. Evaluate the model using accuracy and a confusion matrix.
+5. Save the trained model and integrate it with Flask.
+6. Predict banknote authenticity through a web interface.
+
+## Run the Application
+
+```bash
+pip install flask pandas scikit-learn joblib
+python app.py
+```
+
+Open ```http://127.0.0.1:5000``` in your browser.
+
+## Output :-
+
+![Predicted Output Non Linear SVM](Predicted_Output_Non_Linear_SVM.png)
+
+Happy Learning!
