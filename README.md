@@ -356,3 +356,31 @@ Open ```http://127.0.0.1:5000``` in your browser.
 ![Predicted Output Non Linear SVM](Predicted_Output_Non_Linear_SVM.png)
 
 Happy Learning!
+
+
+
+# 11. Random Forest Algorithm
+
+## Objective
+To implement and compare Decision Tree and Random Forest algorithms for classification and regression tasks.
+
+## Tools & Technologies
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Jupyter Notebook / Google Colab
+
+## Steps
+1. Load a suitable dataset.
+2. Perform data preprocessing and EDA.
+3. Split the data into training and testing sets.
+4. Implement Decision Tree and Random Forest models.
+5. Evaluate and compare model performance.
+6. Visualize the results.
+
+## Output
+
+![Performance Comparison](output.png)
+
+Happy Learning!
