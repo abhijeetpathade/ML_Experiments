@@ -381,6 +381,6 @@ To implement and compare Decision Tree and Random Forest algorithms for classifi
 
 ## Output
 
-![Performance Comparison](output.png)
+![Performance Comparison](Predicted_Output_Random_Forest.png)
 
 Happy Learning!
